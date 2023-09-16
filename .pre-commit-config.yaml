@@ -5,7 +5,7 @@ repos:
     - id: terraform-validate
     - id: terraform-fmt
 - repo: https://github.com/antonbabenko/pre-commit-terraform
-  rev: v1.81.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+  rev: v1.83.3 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
   hooks:
     - id: terraform_tfsec
     - id: terraform_docs
@@ -25,7 +25,7 @@ repos:
       - '--args=--enable-rule=terraform_unused_required_providers'
       - '--args=--enable-rule=terraform_standard_module_structure'
 - repo: https://github.com/commitizen-tools/commitizen
-  rev: 3.7.0 # Get the latest from: https://github.com/commitizen-tools/commitizen/releases
+  rev: 3.9.0 # Get the latest from: https://github.com/commitizen-tools/commitizen/releases
   hooks:
     - id: commitizen
       stages: [commit-msg]
