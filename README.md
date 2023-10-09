@@ -19,14 +19,23 @@ The main purpose of this repository is to create a template for [Terraform](http
 ## Usage
 
 1. Navigate to the environment you would like to deploy,
-2. Plan your changes with `terragrunt plan` to see what changes will be made,
-3. If you're happy with the changes `terragrunt apply`.
+2. Initialize the configuration with:
+   ```bash
+   aws-vault exec <profile> --no-session terragrunt init
+   ```
+3. Plan your changes with:
+   ```bash
+   aws-vault exec <profile> --no-session terragrunt plan
+   ``` 
+4. If you're happy with the changes 
+   ```bash
+   aws-vault exec <profile> --no-session terragrunt apply
+   ```
 
-> **IMPORTANT**
-> 
-> Please note that `.tfstate` files are stored locally on your machine as local backend has been specified. If you would like to properly version control your state files, it is possible to use an AWS S3 bucket to store these files. 
-> This will ensure anyone else other than you running a plan/apply will always be using the same state file.
-> 
+> **NOTE**
+>
+> Please note that terragrunt will create an S3 Bucket and DynamoDB table for storing the remote state. 
+> Ensure the account deploying the resources has the appropriate permissions to create or connect to these resources.
 
 ## Pre-Commit hooks
 
@@ -74,6 +83,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_allowed_account_ids"></a> [allowed\_account\_ids](#input\_allowed\_account\_ids) | The AWS region. | `list(string)` | n/a | yes |
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | The AWS region. | `string` | n/a | yes |
 
 ## Outputs
