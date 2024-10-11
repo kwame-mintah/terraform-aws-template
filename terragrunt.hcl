@@ -1,6 +1,6 @@
 locals {
   project_name = "terraform-aws-template"
-  aws_region   = ""
+  aws_region   = "eu-west-2"
   # Could use `find_in_parent_folders()` if file was in the parent directory.
   account     = read_terragrunt_config("account.hcl")
   environment = read_terragrunt_config("environment.hcl")
