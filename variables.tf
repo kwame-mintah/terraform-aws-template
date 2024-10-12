@@ -1,6 +1,7 @@
 variable "allowed_account_ids" {
   description = <<-EOF
-  The AWS region.
+  List of allowed AWS account IDs to prevent you
+  from mistakenly using an incorrect one.
 
 EOF
 

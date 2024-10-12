@@ -38,7 +38,7 @@ and [project status](https://github.com/opentofu/opentofu/blob/main/WEEKLY_UPDAT
    aws-vault exec <profile> --no-session terragrunt apply
    ```
 
-> **NOTE**
+> [!NOTE]
 >
 > Please note that terragrunt will create an S3 Bucket and DynamoDB table for storing the remote state. 
 > Ensure the account deploying the resources has the appropriate permissions to create or connect to these resources.
@@ -89,7 +89,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_allowed_account_ids"></a> [allowed\_account\_ids](#input\_allowed\_account\_ids) | The AWS region. | `list(string)` | n/a | yes |
+| <a name="input_allowed_account_ids"></a> [allowed\_account\_ids](#input\_allowed\_account\_ids) | List of allowed AWS account IDs to prevent you<br>from mistakenly using an incorrect one. | `list(string)` | n/a | yes |
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | The AWS region. | `string` | n/a | yes |
 
 ## Outputs
