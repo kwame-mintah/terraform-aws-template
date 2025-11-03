@@ -16,12 +16,6 @@ The main purpose of this repository is to create a template for [Terraform](http
 
 1. Have a [AWS account](https://aws.amazon.com/free) account and [associated credentials](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html).
 
-## Information on HashiCorp BSL License Change
-
-Due to the HashiCorp BSL license change, restricting Terraform to the latest open source version (`1.5.7`). 
-Will create a new project template using OpenTofu. To learn more, see the official [OpenTofu website](https://opentofu.org/) 
-and [project status](https://github.com/opentofu/opentofu/blob/main/WEEKLY_UPDATES.md).
-
 ## Usage
 
 1. Navigate to the environment you would like to deploy,
