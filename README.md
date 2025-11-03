@@ -59,14 +59,14 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0, <= 1.5.7 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.17.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.7, <= 1.13.4 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 6.19.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.17.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.19.0 |
 
 ## Modules
 
@@ -76,7 +76,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_availability_zones.avaliabile_zones](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/availability_zones) | data source |
+| [aws_availability_zones.available_zones](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/availability_zones) | data source |
 | [aws_caller_identity.current_caller_identity](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 
 ## Inputs
