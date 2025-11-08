@@ -53,6 +53,6 @@ remote_state {
 #-------------------------------------------------------------------------------------------
 inputs = {
   aws_region          = "${local.aws_region}"
-  allowed_account_ids = "${local.account_id}"
+  allowed_account_ids = ["${local.account_id}"]
   project_name        = "${local.project_name}"
 }
