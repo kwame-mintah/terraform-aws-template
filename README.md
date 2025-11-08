@@ -19,15 +19,26 @@ The main purpose of this repository is to create a template for [Terraform](http
 ## Usage
 
 1. Navigate to the environment you would like to deploy,
-2. Initialize the configuration with:
+2. Create the S3 bucket for your Terraform state file:
+   
+   ```bash
+   aws-vault exec <profile> --no-session terragrunt backend bootstrap
+   ```
+   
+3. Initialize the configuration with:
+   
    ```bash
    aws-vault exec <profile> --no-session terragrunt init
    ```
-3. Plan your changes with:
+
+4. Plan your changes with:
+
    ```bash
    aws-vault exec <profile> --no-session terragrunt plan
    ``` 
-4. If you're happy with the changes 
+
+5. If you're happy with the changes 
+
    ```bash
    aws-vault exec <profile> --no-session terragrunt apply
    ```
